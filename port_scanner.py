@@ -1,5 +1,5 @@
 import socket
-from utils import timefunc
+# from utils import timefunc
 
 class Scanner:
     def __init__(self, ip) -> None:
@@ -26,15 +26,15 @@ class Scanner:
     def write(self, filepath):
         pass
 
-@timefunc
+# @timefunc
 
 def main():
-    ip = '10.0.10.140'
+    ip = 'localhost'
     scanner = Scanner(ip)
-    scanner.scan(1.100)
-    print(repr(scanner))
+    scanner.scan(1, 5000)
+    print(scanner.open_ports)
 
 if __name__ == "__main__":
     main()
-
-
+    
+    
