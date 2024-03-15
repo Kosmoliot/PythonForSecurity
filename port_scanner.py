@@ -1,3 +1,5 @@
+import socket
+
 class Scanner:
     def __init__(self, ip) -> None:
         self.ip = ip
